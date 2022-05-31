@@ -51,6 +51,11 @@ gem 'devise'
 gem 'rails_admin'
 gem "sassc-rails"
 
+#API
+gem 'grape'
+gem 'grape-entity'
+
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
