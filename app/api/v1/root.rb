@@ -5,5 +5,7 @@ module V1
     content_type :json, 'application/json'
 
     mount V1::Waittimes
+    mount V1::Shops
+    add_swagger_documentation
   end
 end

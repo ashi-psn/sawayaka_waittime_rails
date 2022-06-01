@@ -3,7 +3,8 @@ module V1
       resource :wait_times do
         desc 'user list'
         get do
-          present WaitTime.all
+          @waittimes = WaitTime.all
+          present @waittimes, with: V1::Entities::WaitTimeEntity 
         end
       end
   end

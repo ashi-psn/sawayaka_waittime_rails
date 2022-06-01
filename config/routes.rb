@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   devise_for :admin_users
   
   mount Api => '/api'
+  mount GrapeSwaggerRails::Engine => '/swagger'
 end
