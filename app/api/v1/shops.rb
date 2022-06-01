@@ -3,9 +3,8 @@ module V1
         resource :shops do
           desc 'get all shop and wait data'
           get do
-            @shops = Shop.joins(:wait_times).all
-            present @shops
-            # present @shops, with: V1::Entities::ShopEntity 
+            @shops = Shop.includes(:wait_times).order(id: :asc)
+            present @shops, with: V1::Entities::ShopEntity 
           end
         end
     end
