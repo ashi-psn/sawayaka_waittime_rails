@@ -45,6 +45,7 @@ gem "bootsnap", require: false
 # scraiping
 gem "selenium-webdriver"
 gem "webdrivers"
+gem 'whenever', require: false
 
 #admin
 gem 'devise'
@@ -57,7 +58,6 @@ gem 'grape-entity'
 gem 'grape-swagger'
 gem 'grape-swagger-entity'
 gem 'grape-swagger-rails'
-
 
 
 # Use Sass to process CSS
