@@ -34,7 +34,7 @@ shops = [
     {"name" => "富士鷹岡店", "lat" => "35.1949474316762", "lng" => "138.64901840316503"},
     {"name" => "富士錦店", "lat" => "35.15661872952056", "lng" => "138.679674016657"}
 ]
-shops.each do |shop| 
+shops.each do |shop| n
     Shop.create(name: shop["name"], lat: shop["lat"], lng: shop["lng"])
 end
 

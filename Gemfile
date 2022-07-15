@@ -59,6 +59,9 @@ gem 'grape-swagger'
 gem 'grape-swagger-entity'
 gem 'grape-swagger-rails'
 
+#google map
+gem 'gmaps4rails'
+
 
 # Use Sass to process CSS
 # gem "sassc-rails"

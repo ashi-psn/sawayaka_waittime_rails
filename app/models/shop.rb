@@ -5,4 +5,8 @@ class Shop < ApplicationRecord
     def last_wait_times
         wait_times.last
     end
+
+    def today_wait_times
+        wait_times.where("created_at >= ?", zone.now.beginning_of_day)
+    end
 end
